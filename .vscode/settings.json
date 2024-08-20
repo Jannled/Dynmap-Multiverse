@@ -1,0 +1,14 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "cSpell.words": [
+        "Bukkit",
+        "dynmap",
+        "Dynmap"
+    ],
+    "maven.terminal.favorites": [
+        {
+            "command": "compile package",
+            "debug": false
+        }
+    ]
+}
