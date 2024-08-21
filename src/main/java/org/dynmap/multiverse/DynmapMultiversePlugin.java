@@ -40,6 +40,7 @@ public class DynmapMultiversePlugin extends JavaPlugin implements Listener
 		log = this.getLogger();
 
 		getHooks();
+		loadAllAnchors();
 	}
 
 	public void getHooks()
@@ -59,6 +60,8 @@ public class DynmapMultiversePlugin extends JavaPlugin implements Listener
 		Plugin mv_plugin = pm.getPlugin("Multiverse-Core");
 		if(mv_plugin == null)
 			log.severe("Unable to find Multiverse-Core plugin!");
+
+		pluginMultiverse = (MultiverseCore) mv_plugin;
 	}
 
 	public void loadAllAnchors()
