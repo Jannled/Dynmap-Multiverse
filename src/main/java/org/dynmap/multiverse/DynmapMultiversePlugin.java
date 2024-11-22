@@ -4,9 +4,7 @@ import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -79,12 +77,6 @@ public class DynmapMultiversePlugin extends JavaPlugin implements Listener
 	public void addAnchor(String name, String world, double x, double y, double z)
 	{
 		markerSet.createMarker("mv_" + name, name, world, x, y, z, iconAnchor, false);
-	}
-
-	@EventHandler
-	public void onPlayerJoin(PlayerJoinEvent event)
-	{
-		event.getPlayer().sendMessage("Hello World");
 	}
 
 	@Override

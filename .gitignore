@@ -46,3 +46,9 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# OS and other application specific stuff
+Thumbs.db
+.DS_Store
+._*
+*.bak
